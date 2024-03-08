@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+body {
+    background-color: black;
+}
+.container1 {
+    width: 250px;
+    height: 70px;
+    border: 5px solid rgb(0, 234, 255);
+    border-radius: 40px;
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+}
+.box {
+    width: 110px;
+    height: 110px;
+    background-color: rgb(0, 238, 255);
+    border: 0px;
+    border-radius: 60%;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.bi-brightness-high-fill {
+    font-size: 70px;
+    color: yellow;
+}
+.big {
+    width: 110px;
+    height: 110px;
+    background-color: rgb(24, 0, 0);
+    border: 1px solid rgb(255, 157, 0);
+    border-radius: 60px;
+    position: absolute;
+    top: -20px;
+    left: 150px;
+    display: none;
+    cursor: pointer;
+    transition: 1s;
+}
+.bi-moon-stars-fill {
+    font-size: 65px;
+    color: rgb(0, 140, 255);
+}
+.container1:active>.big {
+    display: none;
+}
+
+.container1:active>.box {
+    display: block;
+}
